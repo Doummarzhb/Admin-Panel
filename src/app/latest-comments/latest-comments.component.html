@@ -1,0 +1,18 @@
+<p>latest-comments !</p>
+<div class="divider"></div>
+
+@for(item of data;track data){
+  <section>
+    <img src="../../assets/images/{{item.profileImageSrc}}" alt="No Image">
+    <div class="content">
+      <h6>{{item.username}}</h6>
+      <h6>{{item.comment | textLimit:50}}</h6>
+      <img src="../../assets/images/{{item.DoummarSrc}}" alt="no image ">
+    </div>
+
+  </section>
+}
+
+<div class="links">
+  <a routerLink="comments">Go to Comments</a>
+</div>

@@ -1,0 +1,34 @@
+<p>published-videos !</p>
+<div class="divider"></div>
+
+@for(item of data ; track data){
+<section>
+<img src="../../assets/images/{{item.imageSrc}}" alt="No image">
+<div class="content">
+  <h5> {{item.videoTitle | textLimit:25}} </h5>
+  <div class="data">
+    <div class="views">
+      <span class="material-symbols-outlined">
+        equalizer
+      </span>
+      <span>{{item.views}}</span>
+    </div>
+    <div class="comments">
+      <span class="material-symbols-outlined">
+        chat
+      </span>
+      <span>{{item.comments}}</span>
+    </div>
+    <div class="likes">
+      <span class="material-symbols-outlined">
+        thumb_up
+        </span>
+        <span>{{item.likes}}</span>
+    </div>
+  </div>
+</div>
+</section>
+<div class="links">
+  <a href="Go to course " routerLink="content">Go to course</a>
+</div>
+}
